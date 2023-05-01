@@ -8,17 +8,21 @@ public class FindToy {
         ArrayList<String> toy1 = new ArrayList<String>();
         toy1.add("мягкая игрушка");
         toy1.add("10 штук");
-        toy1.add("1");
+
 
         ArrayList<String> toy2 = new ArrayList<String>();
         toy2.add("машинка");
         toy2.add("20 штук");
-        toy2.add("2");
+
 
         ArrayList<String> toy3 = new ArrayList<String>();
         toy3.add("кукла");
         toy3.add("30 штук");
-        toy3.add("3");
+
+
+        ArrayList<String> toy4 = new ArrayList<String>();
+        toy4.add("конструктор");
+        toy4.add("15 штук");
 
 
         Scanner scanner = new Scanner(System.in);
@@ -29,10 +33,11 @@ public class FindToy {
             System.out.println(String.valueOf(toy1));
             System.out.println(String.valueOf(toy2));
             System.out.println(String.valueOf(toy3));
+            System.out.println(String.valueOf(toy4));
         } else if (num == 2) {
 
 
-            System.out.println("Фильтры: 1 - мягкая игрушка, 2 - машинки, 3 - куклы");
+            System.out.println("Фильтры: 1 - мягкая игрушка, 2 - машинки, 3 - куклы, 4 - конструкторы");
             int NUM = scanner.nextInt();
             if (NUM == 1) {
                 System.out.println(toy1);
@@ -46,10 +51,14 @@ public class FindToy {
                 System.out.println(toy3);
             }
 
+            if (NUM == 4) {
+                System.out.println(toy4);
+            }
+
         }
 
         else {
-            System.out.println("Такого игрушки в каталоге нет");
+            System.out.println("Таких игрушук в каталоге нет");
         }
     }
 }

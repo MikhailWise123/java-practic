@@ -6,19 +6,19 @@ public class MainClass {
     int id;
     String description;
     int amount;
-    int percent;
+    int age;
     public MainClass(int id, int RAM, String VideoCard, String color) {
         this.id = id;
         this.description = description;
         this.amount = amount;
-        this.percent = percent;
+        this.age = age;
     }
     public MainClass(int id) {
         this.id = id;
     }
     @Override
     public String toString() {
-        return String.format("%d %s %d %d", id, description, amount, percent);
+        return String.format("%d %s %d %d", id, description, amount, age);
 
     }
     @Override
